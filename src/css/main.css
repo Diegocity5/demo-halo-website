@@ -9,3 +9,6 @@ body {
     line-height: 1.5;
     background-color: black;
 }
+div.mobile {
+    display: none;
+}
