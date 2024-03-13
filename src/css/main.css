@@ -66,3 +66,22 @@ nav .menu a:hover {
 div.mobile {
     display: none;
 }
+
+
+@media screen and (max-width: 1132px) {
+    nav .link-hide {
+        display: none;
+    }
+    nav .more {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav ul {
+        display: none;
+    }
+    nav .mobile {
+        display: block;
+    }
+}
