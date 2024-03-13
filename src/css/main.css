@@ -9,6 +9,9 @@ body {
     line-height: 1.5;
     background-color: black;
 }
+a {
+    text-decoration: none;
+}
 /*NAVBAR*/
 nav {
     display: flex;
@@ -26,7 +29,6 @@ nav ul li > a {
     display: block;
     position: relative;
     padding: 20px 15px 10px 15px;
-    text-decoration: none;
     color: white;
 }
 nav ul li .link::before {
@@ -57,7 +59,6 @@ nav .menu {
 nav .menu a {
     padding: 10px;
     color: black;
-    text-decoration: none;
 }
 nav .menu a:hover {
     background-color: black;
@@ -68,7 +69,7 @@ div.mobile {
     width: 100%;
 }
 nav .mobile .header {
-    background-color: palegreen;
+    background-color: black;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -77,8 +78,13 @@ nav .mobile .header {
 nav .mobile .header a {
     color: white;
     display: inline-flex;
-    text-decoration: none;
     padding: 10px;
+}
+nav .mobile .header #bmenu {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 nav .mobile .links {
     display: flex;
@@ -90,7 +96,6 @@ nav .mobile .links a {
     font-size: 20px;
     display: block;
     padding: 10px 20px;
-    text-decoration: none;
     color: white;
 }
 nav .mobile .links a:hover {
