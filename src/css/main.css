@@ -66,7 +66,13 @@ nav .menu a:hover {
 div.mobile {
     display: none;
 }
-
+nav .mobile .header {
+    background-color: red;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
 @media screen and (max-width: 1132px) {
     nav .link-hide {
@@ -78,6 +84,10 @@ div.mobile {
 }
 
 @media screen and (max-width: 640px) {
+    nav {
+        width: 100%;
+        padding: 0;
+    }
     nav ul {
         display: none;
     }
