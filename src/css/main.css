@@ -65,15 +65,38 @@ nav .menu a:hover {
 }
 div.mobile {
     display: none;
+    width: 100%;
 }
 nav .mobile .header {
-    background-color: red;
+    background-color: palegreen;
     display: flex;
     text-align: center;
     justify-content: space-between;
     flex-direction: row;
 }
-
+nav .mobile .header a {
+    color: white;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px;
+}
+nav .mobile .links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 200;
+}
+nav .mobile .links a {
+    font-size: 20px;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+nav .mobile .links a:hover {
+    background-color: white;
+    color: black;
+}
 @media screen and (max-width: 1132px) {
     nav .link-hide {
         display: none;
