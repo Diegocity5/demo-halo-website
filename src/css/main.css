@@ -44,6 +44,9 @@ nav ul li .link::before {
 nav ul li .link:hover::before {
     transform: scaleX(1);
 }
+nav .more {
+    display: none;
+}
 nav .menu {
     position:absolute;
     display: none;
