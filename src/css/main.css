@@ -12,6 +12,10 @@ body {
 a {
     text-decoration: none;
 }
+img {
+    width: 100%;
+    height: auto;
+}
 /*NAVBAR*/
 .show {
     display: flex !important;
@@ -78,6 +82,10 @@ nav .mobile .header {
     text-align: center;
     justify-content: space-between;
     flex-direction: row;
+}
+a.container-logo {
+    width: 90%;
+    max-width: 150px;
 }
 nav .mobile .header a {
     color: white;
