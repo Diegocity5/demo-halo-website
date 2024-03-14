@@ -13,6 +13,9 @@ a {
     text-decoration: none;
 }
 /*NAVBAR*/
+.show {
+    display: flex !important;
+}
 nav {
     display: flex;
     align-items: center;
@@ -55,6 +58,7 @@ nav .menu {
     flex-direction: column;
     min-width: 200px;
     background-color: white;
+    margin-top: 48px;
 }
 nav .menu a {
     padding: 10px;
@@ -87,7 +91,7 @@ nav .mobile .header #bmenu {
     cursor: pointer;
 }
 nav .mobile .links {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: relative;
     z-index: 200;
