@@ -130,7 +130,7 @@ header {
     width: 500px;
     position: absolute;
     z-index: 100;
-    top: 200px;
+    top: 100px;
     right: 100px;
     color: white;
     background-color: rgba(0,0,0,0.5);
@@ -150,12 +150,28 @@ header {
 }
 .green-link {
     border: 0;
+    position: relative;
     display: inline-flex;
     align-items: center;
     font-size: 16px;
-    padding: 10px 40px;
+    padding: 10px 15px;
     color: greenyellow;
     font-weight: bolder;
+}
+.green-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    background-color: greenyellow;
+}
+.green-link:hover::before {
+    transform: scaleX(0.8);
 }
 
 @media screen and (max-width: 1132px) {
