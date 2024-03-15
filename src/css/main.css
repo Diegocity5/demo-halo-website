@@ -122,6 +122,41 @@ header {
     background-position: center center;
     height: 100vh;
 }
+/***Banner***/
+#banner {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 40px;
+    width: 500px;
+    position: absolute;
+    z-index: 100;
+    top: 200px;
+    right: 100px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+.green-button {
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 40px;
+    background-color: greenyellow;
+    color: black;
+    font-weight: bolder;
+}
+.green-button:hover {
+    background-color: rgb(138, 207, 33);
+}
+.green-link {
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 40px;
+    color: greenyellow;
+    font-weight: bolder;
+}
 
 @media screen and (max-width: 1132px) {
     nav .link-hide {
