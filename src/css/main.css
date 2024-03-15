@@ -194,6 +194,7 @@ h2::before {
 .green-link:hover::before {
     transform: scaleX(0.8);
 }
+/****BECOME-VIDEOS****/
 
 @media screen and (max-width: 1132px) {
     nav .link-hide {
