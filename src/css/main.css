@@ -3,7 +3,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0;
     margin: 0;
     line-height: 1.5;
@@ -123,6 +123,25 @@ header {
     height: 100vh;
 }
 /***Banner***/
+h2 {
+    font-size: 1.9em;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: -40px;
+    transform: scale(0.4) skewY(-20deg) rotate(20deg);
+    background-color: greenyellow;
+}
+
 #banner {
     font-size: 1.8em;
     text-align: center;
@@ -136,6 +155,7 @@ header {
     background-color: rgba(0,0,0,0.5);
 }
 .green-button {
+    text-transform: uppercase;
     border: 0;
     display: inline-flex;
     align-items: center;
@@ -146,14 +166,15 @@ header {
     font-weight: bolder;
 }
 .green-button:hover {
-    background-color: rgb(138, 207, 33);
+    background-color: rgb(141, 214, 31);
 }
 .green-link {
-    border: 0;
+    text-transform: uppercase;
+    border: none;
     position: relative;
     display: inline-flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 15px;
     color: greenyellow;
     font-weight: bolder;
@@ -184,9 +205,18 @@ header {
     header {
         height: 70vh;
     }
+    #banner {
+        position: initial !important;
+        width: 100%;
+        z-index: 100;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    header {
+        background-position: center 40px;
+        height: 40vh;
+    }
     nav {
         width: 100%;
         padding: 0;
@@ -197,8 +227,7 @@ header {
     nav .mobile {
         display: block;
     }
-    header {
-        background-position: center 40px;
-        height: 30vh;
+    #banner {
+        font-size: 1.1em;
     }
 }
