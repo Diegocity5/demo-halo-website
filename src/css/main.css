@@ -235,6 +235,11 @@ p {
 #videos #slider #controls .prev:hover, #videos #slider #controls .next:hover {
     background-color:   rgb(37, 37, 37);
 }
+#videos #slider #current {
+    width: 1280px;
+    margin: 50px auto;
+    border: solid 1px #00c3ff;
+}
 
 @media screen and (max-width: 1132px) {
     nav .link-hide {

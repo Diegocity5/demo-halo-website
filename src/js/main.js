@@ -12,3 +12,26 @@ moreOptions.addEventListener('click', function(e){
     e.preventDefault();
     moreMenu.classList.toggle("show");
 });
+
+/*Lista de objetos con ids de videos de halo teniendo cuenta
+que la estructura básica de la URL de un video en YouTube es la siguiente:
+https://www.youtube.com/watch?v=VIDEO_ID
+donde VIDEO_ID es el identificador único del video en YouTube*/
+
+const videos = [
+    {
+        id: "PyMlV5_HRWk",
+    },
+    {
+        id: "XCbMVbeKlCg",
+    },
+    {
+        id: "Fmdb-KmlzD8",
+    },
+    {
+        id: "lOthvD1rMbQ",
+    },
+    {
+        id: "nXDk86lQhto"
+    }
+];
