@@ -43,7 +43,22 @@ const bNext = document.querySelector('.next');
 const bPrev = document.querySelector('.prev');
 let current = 0;/*Nuestro contador inicia en la diapositiva cero*/
 
+/*El disparo de los eventos alterara la variable current permitiendonos acceder a otro id de video*/
+bNext.addEventListener('click', (e)=>{
+    current = current >= videos.length - 1 ? current = 0 : current += 1;/*Comparacion y asignación*/
 
+    renderCurrentVideo(videos[current].id);
+    console.log(current);
+});
+
+bPrev.addEventListener('click', (e)=>{
+    current = current <= 0 ? videos.length - 1 : current -= 1;/*Comparacion y asignación*/
+
+    renderCurrentVideo(videos[current].id);
+    console.log(current);
+});
+
+/*Ejecutando la funcion para la primera vez que se ejecute la pagina*/
 renderCurrentVideo(videos[current].id);
 
 function renderCurrentVideo (id){
