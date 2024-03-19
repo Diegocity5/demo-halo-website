@@ -35,3 +35,10 @@ const videos = [
         id: "nXDk86lQhto"
     }
 ];
+
+const sliderContainer = document.querySelector('#slider');
+const currentContainer = document.querySelector('#current');
+const videosContainer = document.querySelector('#videos-container');
+const bNext = document.querySelector('.next');
+const bPrev = document.querySelector('.prev');
+let current = 0;/*Nuestro contador inicia en la diapositiva cero*/
