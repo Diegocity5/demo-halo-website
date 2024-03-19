@@ -124,12 +124,12 @@ header {
 }
 /***Banner***/
 h2 {
-    font-size: 1.9em;
+    font-size: 3.3rem;
     position: relative;
     display: inline-block;
     margin: 0;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 h2::before {
     content: "";
@@ -195,6 +195,27 @@ h2::before {
     transform: scaleX(0.8);
 }
 /****BECOME-VIDEOS****/
+.w-75 {
+    width: 75%;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 1.6em;
+    padding-top: 50px;
+    color: white;
+}
+p {
+    margin: 10px 0;
+}
+#videos {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url(../img/bg-videos.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-position: cover;
+    color: white;
+}
 
 @media screen and (max-width: 1132px) {
     nav .link-hide {
