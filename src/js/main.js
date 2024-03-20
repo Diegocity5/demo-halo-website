@@ -60,7 +60,22 @@ bPrev.addEventListener('click', (e)=>{
 
 /*Ejecutando la funcion para la primera vez que se ejecute la pagina*/
 renderCurrentVideo(videos[current].id);
+renderVideos();
 
 function renderCurrentVideo (id){
     currentContainer.innerHTML = `<iframe width="100%" height="720" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+}
+
+function renderVideos() {
+    //Map por cada objeto en la lista videos crea una estructura html retornandome
+    //un array.
+    const htmls = videos.map(video => {
+        return `<div class="item">
+        <a href="#">
+            <img src="http://i3.ytimg.com/vi/${video.id}/hqdefault.jpg" />
+        </a>
+        </div>`;
+    });
+
+    videosContainer.innerHTML = htmls.join('');/*Uniendo los elementos html en uno solo sin separador*/
 }
