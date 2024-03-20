@@ -240,6 +240,51 @@ p {
     margin: 50px auto;
     border: solid 1px #00c3ff;
 }
+#videos #slider #videos-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    overflow: auto;
+    justify-content: center;
+}
+#videos #slider #videos-container .item {
+    border: solid 1px #003cff;
+    cursor: pointer;
+    overflow: hidden;
+    min-width: 320px;
+    height: 180px;
+}
+#videos #slider #videos-container .item a {
+    position: relative;
+}
+#videos #slider #videos-container img {
+    object-fit: contain;
+    min-width: 320px;
+    height: 180px;
+    transition: opacity 0.3s ease;
+}
+#videos #slider #videos-container .item:hover img {
+    opacity: 0.6;
+}
+#videos #slider #videos-container .item a::before {
+    font-family: 'Material Icons';
+    content: 'play_arrow';
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: block;
+    left: 135px;
+    top: -95px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
 
 @media screen and (max-width: 1132px) {
     nav .link-hide {
