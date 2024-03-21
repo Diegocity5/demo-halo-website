@@ -69,13 +69,22 @@ function renderCurrentVideo (id){
 function renderVideos() {
     //Map por cada objeto en la lista videos crea una estructura html retornandome
     //un array.
-    const htmls = videos.map(video => {
+    const htmls = videos.map((video, index) => {
         return `<div class="item">
-        <a href="#">
+        <a href="#" data-id="${index}">
             <img src="http://i3.ytimg.com/vi/${video.id}/hqdefault.jpg" />
         </a>
         </div>`;
     });
 
     videosContainer.innerHTML = htmls.join('');/*Uniendo los elementos html en uno solo sin separador*/
+    document.querySelectorAll(".item a").forEach(item => {
+        item.addEventListener('click', e => {
+            e.preventDefault();
+            const id = +item.getAttribute('data-id');
+            current = id;
+            console.log(typeof id);
+            renderCurrentVideo(videos[current].id);
+        });
+    })
 }
