@@ -286,7 +286,7 @@ p {
 }
 
 
-@media screen and (max-width: 1132px) {
+@media screen and (max-width: 1191px) {
     nav .link-hide {
         display: none;
     }
@@ -301,9 +301,15 @@ p {
         width: 100%;
         z-index: 100;
     }
+    #slider #current {
+        width: 80% !important;
+    }
+    #slider #current iframe {
+        height: 500px;
+    }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 701px) {
     header {
         background-position: center 40px;
         height: 40vh;
@@ -320,5 +326,14 @@ p {
     }
     #banner {
         font-size: 1.1em;
+    }
+    #slider #current {
+        width: 90%;
+    }
+    #slider #current iframe {
+        height: 300px;
+    }
+    #slider #videos-container {
+        display: none !important;
     }
 }
