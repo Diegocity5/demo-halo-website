@@ -284,7 +284,32 @@ p {
     align-items: center;
     z-index: 100;
 }
+/*****MULTIPLAYER******/
+#multiplayer {
+    height: 100vh;
+    background-image: url(../img/bg-multiplayer.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.info {
+    line-height: 1.2;
+    padding: 40px;
+    width: 600px;
+    margin-right: 50px;
+    transition: background-color 0.3s ease;
+}
+.info p {
+    font-size: 20px;
+}
 
+/*MEDIAQUERIES*/
+@media screen and (max-width: 1519px) {
+    .info {
+        background-color: rgb(0, 0, 0, 0.8);
+        color: white;
+    }
+}
 
 @media screen and (max-width: 1191px) {
     nav .link-hide {
@@ -306,6 +331,12 @@ p {
     }
     #slider #current iframe {
         height: 500px;
+    }
+    #multiplayer {
+        background-position: center left;
+    }
+    .info {
+        margin: 0 auto;
     }
 }
 
@@ -335,5 +366,14 @@ p {
     }
     #slider #videos-container {
         display: none !important;
+    }
+    .info {
+        width: 90%;
+    }
+    #multiplayer {
+        background-position: -400px 0px;
+    }
+    h2 {
+    font-size: 3rem;
     }
 }
