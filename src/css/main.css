@@ -365,6 +365,16 @@ p {
     .info {
         margin: 0 auto;
     }
+    #get-the-game .item-store {
+        width: 100%;
+        padding: 20px;
+    }
+    #get-the-game .item-store .left img {
+        width: 300px;
+    }
+    #get-the-game .item-store .right {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 701px) {
@@ -402,5 +412,17 @@ p {
     }
     h2 {
     font-size: 3rem;
+    }
+    #get-the-game .item-store {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #get-the-game .item-store .left img {
+        width: 300px;
+    }
+    #get-the-game .item-store .right {
+        text-align: center;
+        width: 100%;
     }
 }
