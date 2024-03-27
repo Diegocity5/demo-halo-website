@@ -52,6 +52,12 @@
     .green-link::before {
         color: #8cd320;
     }
+    h3 {
+        color: black;
+    }
+    #videos {
+        color: black;
+    }
 }
 
 
