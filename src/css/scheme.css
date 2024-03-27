@@ -33,6 +33,25 @@
         background-color: black;
         color: white;
     }
+    #banner {
+        color: black;
+        background-color: white;
+    }
+    h2::before  {
+        background-color: #8cd320;
+    }
+    .green-button {
+        background-color: #8cd320;
+    }
+    .green-button:hover {
+        background-color: greenyellow;
+    }
+    .green-link {
+        color: #8cd320;
+    }
+    .green-link::before {
+        color: #8cd320;
+    }
 }
 
 
