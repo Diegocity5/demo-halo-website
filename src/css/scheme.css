@@ -67,6 +67,9 @@
     #get-the-game {
         color: black;
     }
+    .footer {
+        background-image: url(../img/master-chief.jpg);
+    }
 }
 
 
