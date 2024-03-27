@@ -1,0 +1,40 @@
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+    }
+    header {
+    background-image: url(../img/halo-infinite-cover.jpeg);
+    }
+    nav {
+        background-color: rgba(255,255,255,0.4);
+    }
+    nav ul li > a {
+        color: black;
+    }
+    nav ul li .link::before {
+        background-color: black;
+    }
+    nav .mobile .header {
+        background-color: rgba(255,255,255,1);
+    }
+    nav .mobile .header a {
+        color: black;
+    }
+    nav .mobile .header #bmenu {
+        color: black;
+    }
+    nav .mobile .links {
+        background-color: white;
+    }
+    nav .mobile .links a {
+        color: black;
+    }
+    nav .mobile .links a:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+}
