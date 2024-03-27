@@ -330,6 +330,9 @@ p {
     text-align: left;
     width: 80%;
 }
+select[name="services"] {
+    font-size: 1.3rem;
+}
 .footer {
     height: 800px;
     background-image: url(../img/master-chief-darkmode.jpg);
